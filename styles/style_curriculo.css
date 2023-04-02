@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-background: black;
+    --cor-texto: #f6f6f6;
+    --cor-destaque: #22D4FD;
+
+    --fonte-pricipal:'Montserrat', sans-serif ;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%vh;
+    box-sizing: border-box;
+    background-image: url("naruto\ manga\ panel\ copiar.png");
+    background-size: 100%;
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 10% ;
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__links{
+    font-family: var(--fonte-pricipal);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-destaque);
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 0px 10px 0px 10px ;
+}
+
+.cabecalho__menu__links:hover{
+    background-color: #272727;
+}
+
+.curriculo{
+    padding: 5% 10%;
+    font-family: var(--fonte-pricipal);
+    font-size: 1.25rem;
+
+}
+
+.curriculo__conteudo{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.curriculo__conteudo__blocos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.conteudo__informacao{
+    border: 2px solid var(--cor-destaque);
+    border-radius: 0px 30px 0px 30px;
+    padding: 40px;
+    width: 400px;
+
+}
+
+.data{
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.texto__explicacao{
+    font-size: 0.95rem;
+}
+
+span{
+    color: var(--cor-destaque);
+}
+.rodape{
+    color: var(--cor-background);
+    background-color: var(--cor-destaque);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-pricipal);
+    font-weight: 400px;
+}
+
+@media(max-width:1265px){
+
+    .cabecalho{
+        padding: 5%;
+    }
+    
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .curriculo{
+        padding: 5%;
+    }
+
+    .curriculo__conteudo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo__informacao{
+        width: auto;
+    }
+}
